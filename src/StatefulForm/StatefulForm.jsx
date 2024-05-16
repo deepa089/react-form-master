@@ -1,28 +1,33 @@
-const SimpleForm = () => {
+import { useState } from "react";
+
+const StatefulForm = () => {
+    const {email, setEmail} = useState(null)
+
     const handleSubmitButton = e => {
         //   by default page auto load will be stop
         e.preventDefault(); 
-
-            console.log(' i m here');
             console.log(e.target.name.value);
             console.log(e.target.email.value);
-    } 
+    }
 
+    const handleEmailChange = (e) => {
+            console.log(e.target.value);
+    }
     return (
         <div>
+            <h2>Stateful Form</h2>
             <form onSubmit={handleSubmitButton}>
-                <h2>Hello Form</h2>
                 Name  : <input type='text' name='name'/>
                 <br/>
-                Email :  <input type='email' name='email'/>
+                Email :  <input type='email' onChange={handleEmailChange} name='email'/>
                 <br/>
-                Phone :  <input type='text' name='phone'/>
+                Phone :  <input type='password' name='password'/>
                 <br/>
                 <br/>
                 <button type="submit"> Submit</button>
-            </form>
+                </form>
         </div>
     );
 };
 
-export default SimpleForm;
+export default StatefulForm;
