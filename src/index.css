@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.grandPa div {
+  border: #535bf2 solid 1px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.flex{
+  display: flex;
+}
