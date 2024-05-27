@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const StatefulForm = () => {
-    const {email, setEmail} = useState(null)
+    // const {email, setEmail} = useState(null);
 
     const handleSubmitButton = e => {
         //   by default page auto load will be stop

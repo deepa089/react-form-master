@@ -1,14 +1,19 @@
 import './App.css'
 import StatefulForm from './StatefulForm/StatefulForm'
-import HookForm from './components/HookForm/HookForm'
 
 function App() {
+  /* const handleSignUpSubmitBtn = data => {
+    console.log('sign up', data);
+  }
+
+  const handleUpdateProfileSubmitBtn = data => {
+    console.log('profile', data);
+  } */
 
   return (
-    <div>
+    <div className='grandPa'>
       {/* <SimpleForm></SimpleForm> */}
-      {/* <StatefulForm></StatefulForm> */}
-      <HookForm></HookForm>
+      <StatefulForm></StatefulForm>
     </div>
   )
 }
